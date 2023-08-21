@@ -1,0 +1,96 @@
+/* Reset default margin and padding for all elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body background and font styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Header styles */
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+
+/* Main content styles */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+/* Section styles */
+
+.section {
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Heading styles */
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.5em;
+}
+
+
+/* Experience and education styles */
+
+.experience,
+.education {
+    margin-bottom: 1.5em;
+}
+
+
+/* List styles */
+
+ul {
+    list-style: disc;
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+}
+
+
+/* Footer styles */
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Links styles */
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
