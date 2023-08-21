@@ -41,7 +41,7 @@ app.put('/api/people/:id', (req, res) => {
         }
         return person;
     })
-    res.json({success:true,data:newPerson});    //we send the {newPerson}
+    res.json({success:true,data:newPerson});      //we send the {newPerson}
 })
 
 app.delete('/api/people/:id',(req,res) => {
