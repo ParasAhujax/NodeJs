@@ -3,24 +3,20 @@ const app = express();
 const { people } = require('./data');
 
 app.use(express.static('./methods_public'));
-app.use(express.urlencoded({ extended: false })); //used to access the submitted data in POST requests
-app.use(express.json()); //handle the incoming json data we entered in body (v.imp)
+app.use(express.urlencoded({ extended: false }));       //used to access the submitted data in POST requests
+app.use(express.json());                //handle the incoming json data we entered in body (v.imp)
 
 app.get('/api/people', (req, res) => {
     console.log(req.body);
     res.json({ success: true, data: people });
 })
 app.post('/login', (req, res) => {
-    // let name = req.body.name;
-    // const {name} = req.body;
-    // res.send(`Hello ${name}`);
+    const {name} = req.body;
+    res.send(`Hello ${name}`);
     console.log(req.body);
 })
 app.post('/api/people', (req, res) => {
     let {name} = req.body;
-    // const person = people.find((person) => {
-    //     return person.name === name;
-    // });   
 
     console.log(req.body);
     if(!name){
